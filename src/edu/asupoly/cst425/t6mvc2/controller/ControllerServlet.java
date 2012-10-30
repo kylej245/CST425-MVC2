@@ -22,6 +22,7 @@ public class ControllerServlet extends HttpServlet {
      * 
      */
     private static final long serialVersionUID = 1L;
+    private String extraString = null;
     private static Logger logger = Logger.getLogger(
             "edu.asupoly.cst425.t6mvc2.controller.ControllerServlet");
     private static String errorPage = "error.jsp";
