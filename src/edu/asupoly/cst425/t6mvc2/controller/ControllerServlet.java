@@ -59,6 +59,7 @@ public class ControllerServlet extends HttpServlet {
     private void doAction(HttpServletRequest request, HttpServletResponse response)
 					throws ServletException, IOException {
         System.out.println("I added this line!");
+        System.out.println("This one is new though");
        	HttpSession session = request.getSession();
     	String forwardPage = errorPage;
     	Map<String, String[]> params = request.getParameterMap();
