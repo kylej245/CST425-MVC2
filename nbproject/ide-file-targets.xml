@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir=".." name="CST425 MVC Homegrown Example-IDE">
+    <!-- TODO: edit the following target according to your needs -->
+    <!-- (more info: http://www.netbeans.org/kb/articles/freeform-config.html#runsingle) -->
+    <target name="run-selected-file-in-test">
+        <fail unless="run.class">Must set property 'run.class'</fail>
+        <java classname="${run.class}" failonerror="true" fork="true">
+            <classpath>
+                <pathelement path="/Users/kylej/apache-tomcat-7.0.30-8080/lib/servlet-api.jar:/Applications/eclipse/plugins/org.junit_4.10.0.v4_10_0_v20120426-0900/junit.jar"/>
+            </classpath>
+        </java>
+    </target>
+</project>
